@@ -1,0 +1,105 @@
+
+BACKUP
+	http://pages.logicnow.com/BU_TRIAL_Max-Backup-Trial---Multi-Form-Test.html
+	http://pages.logicnow.com/BUDUAL_TRIAL_Max-Backup-Dual-Trial---Multi-Form-Test.html
+	http://pages.logicnow.com/BUIT_TRIAL_Max-Backup-For-IT-Pros-Trial---Multi-Form-Test.html
+
+MAIL
+	http://pages.logicnow.com/MAIL_TRIAL_Max-Mail-Trial---Multi-Form-Test.html
+	http://pages.logicnow.com/MAIL_DIRECT_TRIAL_Max-Mail-For-IT-Pros-Trial---Multi-Form-Test.html
+	http://pages.logicnow.com/MAIL_DUAL_TRIAL_Max-Mail-Dual-Trial---Multi-Form-Test.html
+
+
+RISK INTELLIGENCE
+	http://pages.logicnow.com/RI_TRIAL_Max-Risk-Intelligence-Trial---Multi-Form-Test.html
+	http://pages.logicnow.com/RI_TRIAL_Max-Risk-Intelligence-Trial---Form-Test.html
+
+
+REMOTE MANAGEMENT
+	http://pages.logicnow.com/RM_TRIAL_Max-RM-Trial---Multi-Form-Test.html
+	* http://pages.logicnow.com/solarwinds-msp-rm-latam-trial.htmls
+	http://pages.logicnow.com/RMDUAL_TRIAL_Max-RM-Dual-Trial---Multi-Form-Test.html
+	http://pages.logicnow.com/RMIT_TRIAL_Max-RM-For-IT-Pros-Trial---Multi-Form-Test.html
+
+		*note : this page has no GEO variants. It is english only.
+
+/////////////////////////////////////////////////////////////////////////
+
+BACKUP
+	script: max-backup-trial-form.js
+
+		form: BU_TRIAL.Max Backup Trial Form
+		test: http://pages.logicnow.com/BU_TRIAL_Max-Backup-Trial---Multi-Form-Test.html
+
+		form: BUDUAL_TRIAL.Max Backup Dual Trial Form
+		test: http://pages.logicnow.com/BUDUAL_TRIAL_Max-Backup-Dual-Trial---Multi-Form-Test.html
+
+		form: BUIT_TRIAL.Max Backup For IT Pros Trial Form
+		test: http://pages.logicnow.com/BUIT_TRIAL_Max-Backup-For-IT-Pros-Trial---Multi-Form-Test.html
+
+
+MAIL
+	script: max-mail-trial-form.js
+
+		form: MAIL_TRIAL.Max Mail Trial Form
+		test: http://pages.logicnow.com/MAIL_TRIAL_Max-Mail-Trial---Multi-Form-Test.html
+
+		form: MAIL_DIRECT_TRIAL.Max Mail Trial Form
+		test: http://pages.logicnow.com/MAIL_DIRECT_TRIAL_Max-Mail-For-IT-Pros-Trial---Multi-Form-Test.html
+
+		form: MAIL_DUAL_TRIAL.Max Mail Trial Form
+		test: http://pages.logicnow.com/MAIL_DUAL_TRIAL_Max-Mail-Dual-Trial---Multi-Form-Test.html
+
+
+RISK INTELLIGENCE
+	script: max-ri-trial-form.js
+
+		form: RI_TRIAL.Max Risk Intelligence Trial Form - Short
+		test: http://pages.logicnow.com/RI_TRIAL_Max-Risk-Intelligence-Trial---Multi-Form-Test.html
+
+		form: RI_TRIAL.Max Risk Intelligence Trial Form
+		test: http://pages.logicnow.com/RI_TRIAL_Max-Risk-Intelligence-Trial---Form-Test.html
+
+
+REMOTE MANAGEMENT
+	script: max-rm-trial-form.js
+
+		form: RM_TRIAL.Max RM Trial Form (MSP)
+		test: http://pages.logicnow.com/RM_TRIAL_Max-RM-Trial---Multi-Form-Test.html
+
+	script: max-rm-trial-form-no-us.js
+
+		*note : this page has no GEO variants. It is english only.
+
+		form: RM_TRIAL.Max RM Trial Form (MSP) - Dist - Solarwinds MSP Brazil/LATAM
+		test: http://pages.logicnow.com/solarwinds-msp-rm-latam-trial.html
+
+	script: max-rm-dual-trial-form.js
+
+		form: RMDUAL_TRIAL.Max RM Trial Form (MSP & Direct)
+		test: http://pages.logicnow.com/RMDUAL_TRIAL_Max-RM-Dual-Trial---Multi-Form-Test.html
+
+	script: max-rmdirect-trial-form.js
+
+		form: RMIT_TRIAL.Max RM For IT Pros Trial Form
+		test: http://pages.logicnow.com/RMIT_TRIAL_Max-RM-For-IT-Pros-Trial---Multi-Form-Test.html
+
+
+/////////////////////////////////////////////////////////////////////////
+
+Each product should have 1 page, by changing out the "geo" parameter in the url the page should automatically change out the form to match the chosen language. Parameter values are as follo region-language:
+anz-en
+br-pt
+can-en
+can-fr
+de-de
+es-es
+fr-fr
+it-it
+nl-en
+nl-nl
+pt-pt
+sa-en
+uk-en
+us-en
+Example: http://pages.logicnow.com/form-test-url-goes-here.html?geo=br-pt should populate the page with a Portuguese form.

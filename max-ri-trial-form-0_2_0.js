@@ -77,6 +77,8 @@ MktoForms2.whenReady(function (form) {
 	//generate random number for distributor mapping
 	$('input[name=systemRandomNumber]').val(Math.floor(((Math.random()*10)/2)+1));
 
+	startWithPass();
+
 	form.onSubmit(function(form){
 
 		pushCookie();
@@ -263,27 +265,7 @@ MktoForms2.whenReady(function (form) {
 		//disable the submit button
 		$('button[type=submit]').prop("disabled", true);
 		//set fields from cookies
-		var fields=[
-			['gGLCID','_ga'],
-			['gaClientId__c','_ga'],
-			['Campaign_Marketo__c','campaign'],
-			['utm_campaign','utm_campaign'],
-			['LeadSource','utm_medium'],
-			['Lead_Source_Detail__c','utm_source'],
-			['loc','loc'],
-			['adv','adv'],
-			['cPID','cPID'],
-			['keywords','keywords']
-		];
-		for(i=0; i<fields.length; i++){
-			if($('input[name="'+fields[i][0]+'"]').length>0){
-				if($('input[name="'+fields[i][0]+'"]').val()===""){
-					if(getCookie(fields[i][1])!==""){
-						$('input[name="'+fields[i][0]+'"]').val(getCookie(fields[i][1]));
-					}
-				}
-			}
-		}
+		pushCookie();
 	}
 
 	function checkForFields(){

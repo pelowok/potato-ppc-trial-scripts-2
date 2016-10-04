@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e8cd640f-f59d-42f7-9292-fbcec0582fc7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/max-ri-trial-form-0_2_0.js" afterPath="$PROJECT_DIR$/max-ri-trial-form-0_2_0.js" />
     </list>
     <ignored path="javascript-for-forms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,8 +36,8 @@
       <file leaf-file-name="max-ri-trial-form-0_2_0.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/max-ri-trial-form-0_2_0.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="257" column="26" selection-start-line="257" selection-start-column="13" selection-end-line="257" selection-end-column="26" />
+            <state relative-caret-position="591">
+              <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -51,6 +52,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/max-rm-trial-form-0_2_0.js" />
+        <option value="$PROJECT_DIR$/max-ri-trial-form-0_2_0.js" />
       </list>
     </option>
   </component>
@@ -209,8 +211,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/max-ri-trial-form-0_2_0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="257" column="26" selection-start-line="257" selection-start-column="13" selection-end-line="257" selection-end-column="26" />
+        <state relative-caret-position="591">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
           <folding />
         </state>
       </provider>

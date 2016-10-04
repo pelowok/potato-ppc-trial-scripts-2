@@ -70,30 +70,15 @@ function pushCookie(){
 	}
 }
 
-MktoForms2.whenReady(function (form) {
-
-	pushCookie();
-
-	//generate random number for distributor mapping
-	$('input[name=systemRandomNumber]').val(Math.floor(((Math.random()*10)/2)+1));
-
-	startWithPass();
-
-	form.onSubmit(function(form){
-
-		pushCookie();
-
-	});
-
-	//compare 2 strings function (from drupal js)
+//compare 2 strings function (from drupal js)
 	function similar_text(first, second, percent) {
-		/**  
+		/**
 		 * discuss at: http://phpjs.org/functions/similar_text/
 		 * original by: RafaÅ‚ Kukawski (http://blog.kukawski.pl)
 		 * bugfixed by: Chris McMacken
-		 * bugfixed by: Jarkko Rantavuori original by findings in stackoverflow 
+		 * bugfixed by: Jarkko Rantavuori original by findings in stackoverflow
 		 *   (http://stackoverflow.com/questions/14136349/how-does-similar-text-work)
-		 * improved by: Markus Padourek (taken from 
+		 * improved by: Markus Padourek (taken from
 		 *   http://www.kevinhq.com/2012/06/php-similartext-function-in-javascript_16.html)
 		 * example 1: similar_text('Hello World!', 'Hello phpjs!');
 		 *   returns 1: 7
@@ -120,7 +105,7 @@ MktoForms2.whenReady(function (form) {
 		for (p = 0; p < firstLength; p++) {
 			for (q = 0; q < secondLength; q++) {
 				for (l = 0;
-					 (p + l < firstLength) && 
+					 (p + l < firstLength) &&
 					   (q + l < secondLength) && (first.charAt(p + l) === second.charAt(q + l)); l++);
 				if (l > max) {
 					max = l;
@@ -145,11 +130,26 @@ MktoForms2.whenReady(function (form) {
 
 		if (!percent) {
 			return sum;
-		} 
+		}
 		else {
 			return (sum * 200) / (firstLength + secondLength);
 		}
 	}
+
+MktoForms2.whenReady(function (form) {
+
+	pushCookie();
+
+	//generate random number for distributor mapping
+	$('input[name=systemRandomNumber]').val(Math.floor(((Math.random()*10)/2)+1));
+
+	startWithPass();
+
+	form.onSubmit(function(form){
+
+		pushCookie();
+
+	});
 
 	function testPasswords(){
 		//set various variables for later use
